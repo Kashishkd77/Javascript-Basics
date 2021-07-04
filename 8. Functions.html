@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    
+    <body>
+        <script>
+            function inbuiltFunc()
+            {
+                document.write("Calculation is "+10**5+"<br>");
+            }
+            
+            // Passing arguments
+            function simpleCal(a,b)
+            {
+                var c=a+b;
+                document.write("Sum of "+a+" and "+b+" is : "+c+"<br>");
+
+            }
+            
+            // Returning value
+            function complexCal()
+            {
+                var d=10+30*(10^2)%2
+                return d  
+            }
+
+            var result = complexCal();
+            var cal = result + 1000;
+            document.write("The value of cal is : "+cal+"<br>");
+
+            inbuiltFunc();
+            simpleCal(10,70);
+            document.write("The value of d is : "+complexCal());
+        </script>
+    </body>
+</html>

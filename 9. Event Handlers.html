@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Handlers</title>
+    </head>
+    
+    <body>
+        <button onclick="alert('Hello from button!');">CLICK HERE</button>
+        <button onmouseover="alert('Hello hover feature!');">HOVER OVER ME</button>
+        <button id="id1">CLICK HERE</button>
+        <script>
+            document.getElementById('id1').onclick=function()
+            {
+                clickmeFunction()   
+            }
+            function clickmeFunction()
+            {
+                alert("Function clickmeFunction()")
+            }
+        </script>
+    </body>
+</html>
