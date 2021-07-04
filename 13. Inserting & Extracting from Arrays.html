@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inserting & Extracting Elements in Array</title>
+    </head>
+    
+    <body>
+        <script>
+            
+            var fruits=[];
+            fruits[0]="Apple";
+            fruits[2]="Grapes";
+            fruits[5]="Banana";
+            
+            document.write(fruits);
+            fruits.shift();
+            document.write("<br>List of fruits after performing shift : "+fruits);
+
+            fruits.unshift("Mango","Guava");
+            document.write("<br>List of fruits after performing unshift : "+fruits);
+
+            fruits.splice(3,4,"Pine Apple","Strawberry");
+            document.write("<br>List of fruits after performing splice : "+fruits);   
+
+            var fruitChat = fruits.slice(1,4);
+            document.write("<br>List of fruitChat items after performing slice : "+fruitChat);
+        </script>
+    </body>
+</html>

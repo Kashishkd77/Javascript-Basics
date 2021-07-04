@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>More on For Loop</title>
+    </head>
+    
+    <body>
+        <script>
+            
+            var num=[1,45,67,23,4,23,7,8];
+            var search=prompt("Enter the number to be searched : ")
+            var count=0;
+            var flag=0;
+
+            var i=0;
+            while (i<num.length)
+            {
+                if(search==num[i])
+                {   
+                    count++;
+                    flag=1
+                }
+                i++;
+            }
+            if (flag==1)
+            {
+                document.write(search+" is found in given array list "+count+" times.");
+            }
+            else
+            {
+                document.write(search+" is not found in given array list ");
+            }
+        </script>
+    </body>
+</html>

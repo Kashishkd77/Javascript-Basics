@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Setting Flags using Booleans</title>
+    </head>
+    
+    <body>
+        <script>
+            
+            var num=[1,45,67,23,4,23,7,8];
+            var numFound=false;
+            var count=0;
+            var flag=0;
+            
+            var i=0;
+            while (i<3)
+            {
+                var search=prompt("Enter the number to be searched : ")
+                var j=0;
+                while (j<num.length)
+                {
+                    if(search==num[j])
+                    {   
+                        numFound=true;
+                    
+                        if (numFound)
+                        {
+                            alert(search+" is found in given array list ");
+                            console.log(search+" is found in given array list ");
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        alert(search+" is not found in given array list ");
+                        console.log(search+" is not found in given array list ");
+                        break;
+                    }
+                    j++;
+                }
+                i++;
+            }
+        </script>
+    </body>
+</html>
